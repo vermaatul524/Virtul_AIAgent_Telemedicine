@@ -8,22 +8,23 @@ A Python-based AI virtual agent for telemedicine applications. The agent can int
 - Easily extendable modules for AI-driven healthcare solutions
 
 ## Installation
+
 1. Clone the repository:
-```bash
+bash
 git clone https://github.com/vermaatul524/Telemedicine_Virtual_Agent.git
 cd Telemedicine_Virtual_Agent
 
-Create a virtual environment and activate it:
+2. Create a virtual environment and activate it:
 python -m venv env
 source env/bin/activate  # Linux/Mac
 env\Scripts\activate     # Windows
 
-Install dependencies:
+3. Install dependencies:
 pip install -r requirements.txt
-Add your .env file with API keys (OpenAI, etc.).
+Add your .env file with API keys (OpenAI, etc.)
 
 
-## Usage
+##  Usage
 Run the main agent:
 python main.py
 
@@ -54,17 +55,14 @@ Create `.github/workflows/python-app.yml` for automated testing:
 
 ```yaml
 name: Python application
-
 on:
   push:
     branches: [ main ]
   pull_request:
     branches: [ main ]
-
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
     - uses: actions/checkout@v3
     - name: Set up Python
@@ -78,4 +76,3 @@ jobs:
     - name: Run tests
       run: |
         pytest tests/
-Project description goes here.
