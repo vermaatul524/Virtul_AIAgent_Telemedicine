@@ -13,26 +13,24 @@ A Python-based AI virtual agent for telemedicine applications. The agent can int
 git clone https://github.com/vermaatul524/Telemedicine_Virtual_Agent.git
 cd Telemedicine_Virtual_Agent
 
-
 Create a virtual environment and activate it:
-
 python -m venv env
 source env/bin/activate  # Linux/Mac
 env\Scripts\activate     # Windows
-
 
 Install dependencies:
 pip install -r requirements.txt
 Add your .env file with API keys (OpenAI, etc.).
 
-Usage
+
+## Usage
 Run the main agent:
 python main.py
 
 Run tests:
 pytest tests/
 
-Folder Structure
+## Folder Structure
 - agents.py – Core AI agent logic
 - telemed_connect_agent.py – API connection logic
 - speech_utils.py – Speech-to-text & text-to-speech
@@ -40,14 +38,14 @@ Folder Structure
 - doctor.json – Sample doctor data
 - tests/ – Unit and integration tests
 
-Contributing
+## Contributing
 1. Fork the repository
 2. Create a new branch: git checkout -b feature-name
 3. Commit your changes: git commit -m 'Add feature'
 4. Push: git push origin feature-name
 5. Open a Pull Request
 
-License
+## License
 MIT License
 
 ### **GitHub Actions Workflow (optional)**
